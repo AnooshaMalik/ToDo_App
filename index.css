@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+}
+
+
+/*                        this is container                   */
+
+.Container {
+    width: 50vw;
+    height: 80vh;
+    background-color: aqua;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 30% 60% 10%;
+    grid-template-areas: "a" "b" "c";
+    /* background-color: #1F2833;
+    color: #66FCF1; */
+    position: relative;
+    /* background-color: rgb(52, 177, 175);
+    color: #254E58; */
+    font-size: 30px;
+    /* background-color: #65CCB5;
+    color: #3B945E */
+    border: 20px solid #88BDBC;
+    /* background-color: #379683;
+     */
+    background-color: #88BDBC;
+    color: #254E58;
+    box-shadow: 3px 3px 9px #254E58;
+    ;
+}
+
+
+/*                           this is header                 */
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.header {
+    grid-area: a;
+    display: flex;
+    /* background-color: lightgreen; */
+}
+
+#date {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1%;
+}
+
+.clear {
+    /* position: relative;
+    right: 2%; */
+    position: absolute;
+    right: 2%;
+    top: 1%;
+}
+
+
+/*                          this is content                      */
+
+.content {
+    /* background-color: lightpink; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: grey;
+    border-bottom: 1px solid #98c2c1;
+    /* grid-template-columns: min-content 1fr min-content; */
+}
+
+.content .list .item {}
+
+.add-item {
+    /* background-color: lightseagreen; */
+}
+
+#list {
+    /* display: flex; */
+}
+
+#list i,
+p {
+    margin-left: 20px;
+}
+
+.add-item input {
+    padding: 9px 15px;
+    outline: none;
+}
+
+.add-item {
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+    .Container .App {
+        font-size: 22px;
+        /* color: hotpink; */
+        padding-top: 10px;
+    }
+}
